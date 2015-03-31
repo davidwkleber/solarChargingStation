@@ -1,0 +1,132 @@
+body {
+	font-family: Trebuchet, Arial, sans-serif;
+	
+}
+#tourHeading {
+	position: absolute;
+	top: 25px;
+	left: 650px
+}
+#cutInH{
+	position: relative;
+	top: 45px;
+	text-align: center;
+	background-color: red;
+}
+#counterMomentH{
+	position: relative;
+	top: 45px;
+	text-align: center;
+	background-color: red;
+}
+.oneDiv{
+	position: absolute;
+	top: 60px;
+	left: 250px;
+	width: 1350px;
+}
+.left2colDiv{
+	position: absolute;
+	top: 60px;
+	left: 250px;
+	width: 650px;
+	display: block;
+}
+.right2colDiv{
+	position: absolute;
+	top: 60px;
+	right: 250px;
+	width: 650px;
+}
+.left3colDiv{
+	position: absolute;
+	top: 60px;
+	left: 200px;
+	width: 500px;
+	display: block;
+}
+.middle3colDiv{
+	position: absolute;
+	top: 60px;
+	left: 750px;
+	width: 500px;
+}
+.right3colDiv{
+	position: absolute;
+	top: 60px;
+	left: 1250px;
+	width: 500px;
+}
+p {
+	vertical-align: center;
+}
+.backDiv{
+	position: absolute;
+	top: 50px;
+	left: 244px;
+	width: 500px;
+	height: 120px;
+	background-color: gray;
+}
+.expH2{
+	text-align: center;
+	vertical-align: middle;
+}
+.expAdiv{
+	position: absolute;
+	top: 60px;
+	left: 350px;
+	width: 250px;
+	height: 80px;
+	vertical-align: middle;
+	background-color: #1f8fe0;
+}
+.expBdiv{
+	position: absolute;
+	top: 60px;
+	left: 650px;
+	width: 250px;
+	height: 80px;
+	vertical-align: middle;
+	background-color: #1f8fe0;
+}
+.navImg {
+	width: 16.6667%;
+	float: left;
+}
+.navImg2 {
+	width: 12.5%;
+	float: left;
+}
+nav {
+	font-size: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px
+}
+
+#previous{
+	position: absolute;
+	top: 60px;
+	left: 20px;
+}
+#next{
+	position: absolute;
+	top: 60px;
+	right: 20px;
+}
+	
+body {
+	clear: left
+}
+#swipe {
+	float: right;
+	width: 20%;
+	margin: 10px;
+}
+#cutInHeading {
+	position: absolute;
+	top: 20px;
+	left: 700px;
+}
