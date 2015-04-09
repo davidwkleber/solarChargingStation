@@ -50,7 +50,7 @@ var path = svg.append("g")
  
 
  
-function tick( value, axisMax ) {
+function tick( xValue, yValue, xAxisMax, yAxisMax ) {
 
  // var y = d3.scale.linear()
   //  .domain([d3.min(data, function(d) {return d.value;}), d3.max(data, function(d) {return d.value;})])
@@ -59,8 +59,8 @@ function tick( value, axisMax ) {
   // push a new data point onto the back
  // data.push(random());
  // console.log('tick value: '+value);
- if (value >= 0) {
-  data.push(+value);
+ if (xValue >= 0 && yValue >= 0) {
+  data.push(xValue, yValue);
  
 /* this is for dynamic adjustment of y axis
 	var ymin = d3.min(data);
@@ -72,7 +72,8 @@ function tick( value, axisMax ) {
   y.domain([yminAxis, ymax+axisMargin]);
  */
  
-   y.domain([0, axisMax]);
+   y.domain([0, yAxisMax]);
+   x.domain([0, xAxisMax]);
 
  var newsvg = d3.select("#lineGraphDiv").transition();
  
@@ -88,7 +89,20 @@ function tick( value, axisMax ) {
       .ease("linear")
       .attr("transform", "translate(" + x(-1) + ",0)")
       .each("end", 00);
- 
+ }
+  newsvg.select(".x.axis")
+	.duration(500)
+	.call(d3.svg.axis().scale(x).orient("left"));
+  // redraw the line, and slide it to the left
+  path
+      .attr("d", line)
+      .attr("transform", null)
+    .transition()
+      .duration(500)
+      .ease("linear")
+      .attr("transform", "translate(" + x(-1) + ",0)")
+      .each("end", 00);
+ }
   // pop the old data point off the front
   data.shift();
   }

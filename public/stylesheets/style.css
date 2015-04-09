@@ -392,7 +392,16 @@ svg {
 		overflow: hidden;
 
 	}
-	
+		.dataFrame {
+		position: absolute;
+		left: 840px;
+		top: 200px;
+		width: 1000px;
+		height: 700px;
+		 border-right:none;
+		overflow: hidden;
+
+	}
 	
 /*
 	Settings for record functions
@@ -405,7 +414,7 @@ svg {
 	.recordButtons {
 			position: absolute;
 			width: 158px;
-			left: 1600px; top: 910px;
+			left: 1400px; top: 910px;
 			   -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
  border-right:none;
 
@@ -428,16 +437,18 @@ svg {
     font-size: 18px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
-.recordButtons-inner:before {
-    content: " Recording";
+.recordButtons-inner:after {
+    content: "    Recording";
     padding-left: 12px;
+	    text-align: center;
+
     background-color: #FC3737; color: #5C5C5B;
 }
-.recordButtons-inner:after {
-    content: "Record OFF";
+.recordButtons-inner:before {
+    content: "Record OFF     ";
     padding-right: 12px;
     background-color: #B0B0B0; color: #5C5C5B;
-    text-align: right;
+    text-align: center;
 }
 .recordButtons-switch {
     display: block; width: 43px; margin: -8.5px;
@@ -454,4 +465,27 @@ svg {
     right: 0px; 
 }
 
+
+.saveDataButtonDiv{
+			position: absolute;
+			width: 158px;
+			left: 1600px; top: 910px;
+			   -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+ border-right:none;
+
+}
+.saveDataButtonDiv :active{
+	background-color: #FC3737;
+	position:relative;
+	top:1px;
+}
+.saveDataButton {
+    position: relative; width: 75px; height: 30px;
+	font-size: 18px; color: #5C5C5B; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+	background-color: #75B1FF;
+	border: 2px solid #999999; border-radius: 17px;
+	outline: none;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+	cursor: pointer;
+}
 	
